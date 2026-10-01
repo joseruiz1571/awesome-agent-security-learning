@@ -546,5 +546,26 @@
       "tool-exfil",
       "traces/custody"
     ]
+  },
+  {
+    "id": "darkmoon",
+    "title": "Darkmoon",
+    "url": "https://github.com/ASCIT31/Dark-Moon",
+    "type": "Repositories & tools",
+    "topics": [
+      "Red teaming",
+      "Security"
+    ],
+    "scope": "Broader AI",
+    "cost": "Free",
+    "description": "Open-source autonomous penetration-testing platform where an LLM orchestrates specialist agents and offensive tools over MCP on a local model; instructive for studying how an agentic system plans, chains tools, and proves attacks with real exploits.",
+    "availability": "Available",
+    "checked_on": "2026-10-01",
+    "evidence": "https://github.com/ASCIT31/Dark-Moon",
+    "verification": "Page inspected",
+    "failure_modes": [
+      "goal-hijack",
+      "tool-exfil"
+    ]
   }
 ]
