@@ -48,14 +48,18 @@ Agent-specific resources are separated from broader AI and foundational material
 
 - [Agentic AI Development &amp; Security](<https://www.coursera.org/specializations/agentic-ai-development-security>) — Specialization combining agent development and security concepts. Verify enrollment and certificate terms. **Check provider; Agent-specific.** Available.
 - [AI Security Academy](<https://www.aisecurityacademy.ai/>) — AI security training catalog; select courses based on their syllabus and agent relevance. **Check provider; Broader AI.** Available.
+- [AI Security University: MCP Security Fundamentals](<https://aisec.university/courses/mcp-security-fundamentals>) — Free, self-paced course with 21 lessons on MCP architecture, the OWASP MCP Top 10, incidents, and mitigations. Covers token exposure, privilege escalation, tool poisoning, supply-chain tampering, and command injection. The provider issues a verifiable course-completion certificate after a final quiz. **Free; Agent-specific.** Available.
 - [Astrix AI Agent Training Program](<https://astrix.security/learn/ai-agent-training-program/>) — Vendor-produced training collection about AI agents and their security. **Check provider; Agent-specific.** Available.
 - [SANS SEC546: Securing Agentic AI](<https://www.sans.org/cyber-security-courses/securing-agentic-ai>) — Instructor-led training focused on securing agentic AI systems. Check current dates and prerequisites with SANS. **Paid; Agent-specific.** Available.
 
 ## Credentials (verify claims)
 
+- [AWS Securing Agent Identities Demonstrated](<https://skillbuilder.aws/learn/Z8M87YZWXB/aws-securing-agent-identities-demonstrated/9ZRC3U51YT>) — AWS microcredential assessing agent workload identities, tag-based access control, scoped JWT authorization, authentication methods, and token audit trails in a timed, live AWS lab. AWS states no Skill Builder subscription is required; passing earns a Credly badge. Distinct from AWS Certification. **Free; Agent-specific.** Available.
 - [Certified Agentic AI Security Expert (CAASE)](<https://www.practical-devsecops.com/certified-agentic-ai-security-expert/>) — Provider describes practical training in agent reasoning, memory, tool use, and multi-agent identity. Listed as coming soon when checked. **Paid; Agent-specific.** Coming soon.
 - [CSA Trusted AI Safety Expert (TAISE)](<https://cloudsecurityalliance.org/education/taise>) — AI safety certificate program covering organizational practices and responsible adoption. **Paid; Broader AI.** Available.
 - [LangChain Certified Agent Engineer](<https://academy.langchain.com/pages/certifications-lcae>) — Agent engineering credential. Useful implementation background, not a dedicated agent-security certification. **Check provider; Foundations.** Available.
+- [Pwned Labs AI Systems Red Team Professional (AISRTP)](<https://pwnedlabs.io/bootcamps/ai-systems-red-team-certification-aisrtp>) — Provider-described practical certification covering prompt injection, RAG poisoning, agent/tool abuse, and MCP attack paths. The associated bootcamp lists a 24-hour hands-on exam and an October 20, 2026 launch; verify current enrollment and assessment terms. **Paid; Agent-specific.** Coming soon.
+- [SecOps Group Certified Agentic AI Pentester (C-AgAIPen)](<https://pentestingexams.com/certifications/professional/certified-agentic-ai-pentester/>) — Provider-described intermediate, four-hour practical exam with flag-based challenges against agentic applications accessed over VPN. Covers prompt injection, goal hijacking, tool abuse, memory, and multi-agent workflows. Prior application pentesting experience is recommended; the provider prohibits AI assistance during the exam. **Paid; Agent-specific.** Available.
 
 ## Repositories & tools
 
