@@ -17,4 +17,10 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s tests -v
       - run: python scripts/build.py
+      - name: Check the generated Awesome list
+        run: |
+          if ! git diff --exit-code -- README.md; then
+            echo '::error::Run python3 scripts/build.py and commit README.md on this PR branch.'
+            exit 1
+          fi
       - run: node --check site/app.js

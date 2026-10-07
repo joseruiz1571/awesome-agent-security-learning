@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from catalog import canonical, load, resource_id, validate
-from discover import due, feed_items, relevant, select, historical_ids, report, collect, candidate
+from discover import due, feed_items, relevant, select, historical_ids, report, collect, candidate, classify
 from build import markdown
 
 class CatalogTests(unittest.TestCase):
@@ -59,6 +59,34 @@ class CatalogTests(unittest.TestCase):
         row=candidate({'title':'Agent security course','url':'https://example.com/a','description':'Secret proprietary snippet'},'Brave Search','query',date(2026,9,28))
         self.assertNotIn('proprietary',row['description']); self.assertIsNone(row['checked_on'])
         self.assertEqual(row['type'],'Courses'); self.assertIn('candidate-id:',report([row],[],False))
+    def test_classification_uses_actual_host(self):
+        cases = [
+            ('https://github.com/owner/repo', 'Repositories & tools'),
+            ('https://www.GitHub.com/owner/repo', 'Repositories & tools'),
+            ('https://youtube.com/@agent-security', 'YouTube channels'),
+            ('https://www.youtube.com/channel/example', 'YouTube channels'),
+            ('https://m.youtube.com/watch?v=example', 'Videos & webinars'),
+            ('https://www.youtube.com/watch?v=example', 'Videos & webinars'),
+            ('https://youtube.com/watch?next=youtube.com/@example', 'Videos & webinars'),
+            ('https://youtube.com/watch?next=github.com/owner/repo', 'Videos & webinars'),
+        ]
+        for url, expected in cases:
+            with self.subTest(url=url):
+                self.assertEqual(classify('Agent security', url, '')[0], expected)
+    def test_classification_rejects_misleading_domain_text(self):
+        for url in [
+            'https://notgithub.com/owner/repo',
+            'https://github.com.example.org/owner/repo',
+            'https://example.org/github.com/owner/repo',
+            'https://example.org/?next=github.com/owner/repo',
+            'https://notyoutube.com/watch?v=example',
+            'https://youtube.com.example.org/@example',
+            'https://example.org/youtube.com/@example',
+            'https://example.org/?next=youtube.com/channel/example',
+        ]:
+            with self.subTest(url=url):
+                row=candidate({'title':'Agent security', 'url':url}, 'Brave Search', 'query', date(2026,10,4))
+                self.assertEqual(row['type'], 'Blogs & newsletters')
     def test_brave_success_and_private_snippet_not_published(self):
         config={'web_queries':['agent safety course'],'github_queries':[],'feeds':[]}
         payload={'web':{'results':[{'title':'Agent safety course','url':'https://example.org/course','description':'Learn agent oversight'}]}}

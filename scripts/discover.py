@@ -11,7 +11,7 @@ import sys
 import time
 import xml.etree.ElementTree as ET
 from datetime import date, timedelta
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, build_opener, HTTPRedirectHandler
 from catalog import ROOT, canonical, resource_id, load, save, validate
 
@@ -57,13 +57,17 @@ def relevant(text):
 
 def classify(title, url, text):
     t=f'{title} {text}'.lower()
-    if 'github.com/' in url: kind='Repositories & tools'
+    parsed=urlsplit(url)
+    host=(parsed.hostname or '').lower()
+    youtube=host in ('youtube.com','www.youtube.com','m.youtube.com')
+    # Inspect the host separately: paths and queries can name unrelated domains.
+    if host in ('github.com','www.github.com'): kind='Repositories & tools'
     elif any(x in t for x in ('certified','certification','certificate')): kind='Certifications'
     elif any(x in t for x in ('ctf','capture the flag','challenge','lab exercise')): kind='CTFs & labs'
     elif 'podcast' in t: kind='Podcasts'
     elif any(x in t for x in ('textbook',' book','ebook')): kind='Books'
-    elif 'youtube.com/@' in url or 'youtube.com/channel/' in url: kind='YouTube channels'
-    elif 'youtube.com/' in url or 'webinar' in t: kind='Videos & webinars'
+    elif youtube and parsed.path.startswith(('/@','/channel/')): kind='YouTube channels'
+    elif youtube or 'webinar' in t: kind='Videos & webinars'
     elif any(x in t for x in ('course','training','curriculum')): kind='Courses'
     elif any(x in t for x in ('standard','framework','guidance','guide')): kind='Guides & standards'
     else: kind='Blogs & newsletters'

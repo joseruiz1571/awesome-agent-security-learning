@@ -10,27 +10,23 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
       - run: python -m unittest discover -s tests -v
       - run: python scripts/build.py
       - run: node --check site/app.js
-      - name: Synchronize the generated Awesome list
-        run: |
-          if ! git diff --quiet -- README.md; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add README.md
-            git commit -m 'Refresh generated resource list'
-            git push origin HEAD:main
-          fi
+      - name: Check the generated Awesome list
+        run: git diff --exit-code -- README.md
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site

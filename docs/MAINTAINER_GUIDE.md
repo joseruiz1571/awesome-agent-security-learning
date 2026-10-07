@@ -44,8 +44,8 @@ A full run without the secret fails with a clear setup message. An explicitly se
 4. To edit, use the file's edit option on the PR branch. Alternatively, switch the repository branch selector to the proposal branch and edit the catalog there.
 5. Remove entire JSON objects for rejected items, preserving commas between remaining objects. Checks catch malformed JSON.
 6. Replace generic descriptions with useful original summaries. Correct type, topics, scope, cost, and availability. After inspecting a page, change `verification` to `Page inspected` and `checked_on` to a date such as `2026-10-12`.
-7. Commit edits to the proposal branch, not main. Review the diff and checks again.
-8. **Merge pull request** accepts every remaining addition. Publishing regenerates the README and public page.
+7. Regenerate README with `python3 scripts/build.py` and commit it with your catalog edits on the proposal branch. For GitHub-only edits, ask Codex or a maintainer to do this before merging. Review the diff and checks again.
+8. **Merge pull request** accepts every remaining addition. The generated README is already in the PR; publishing builds and deploys the public page.
 9. **Close pull request** without merging declines the whole batch. Candidate IDs prevent repeated proposals.
 
 You can ask Codex: “Review PR #N, inspect its links, remove weak additions, and improve descriptions. Leave it open for me to merge.” This lets you delegate preparation while retaining the decision.
@@ -88,7 +88,7 @@ Search content is treated as data. No repository is installed or executed, and n
 | `site/style.css` | Visual design and responsive layout | Change styling |
 | `site/app.js` | Browser search and filters | Change interaction |
 | `.github/workflows/discover.yml` | Schedule and PR creation | Change automation |
-| `.github/workflows/publish.yml` | Checks, README update, Pages deployment | Change publishing |
+| `.github/workflows/publish.yml` | Checks and read-only Pages build/deployment | Change publishing |
 | `.github/workflows/validate.yml` | Contributor PR checks | Change validation |
 | `tests/test_catalog.py` | Regression checks | Protect new behavior |
 
@@ -131,16 +131,17 @@ With your key already in the environment, `python3 scripts/discover.py` performs
 
 ## Permissions and limits
 
-Discovery can write proposal branches and create PRs. Publishing can synchronize README and deploy Pages. Contributor PR checks are read-only and receive no Brave key. Actions are pinned to revisions; Dependabot proposes monthly updates. The bot never merges or approves proposals.
+Discovery can write proposal branches and create PRs. Publishing reads the repository and deploys Pages; it cannot push to main. Contributor PR checks are read-only and receive no Brave key. Actions are pinned to revisions; Dependabot proposes monthly updates. The bot never merges or approves proposals.
 
-GitHub's setting to allow Actions to create PRs is required. GitHub groups creation and approval capability into one setting; the workflow never uses approval. GitHub may restrict or require approval for checks on token-created PRs, so discovery validates the actual proposed catalog before creating the PR. If checks are absent after human edits, close and reopen the PR yourself, or manually run validation on its branch. [GitHub token behavior](https://docs.github.com/en/actions/concepts/security/github_token).
+GitHub's setting to allow Actions to create PRs is required. GitHub groups creation and approval capability into one setting; the workflow never uses approval. GitHub may restrict or require approval for checks on token-created PRs, so discovery validates the actual proposed catalog before creating the PR. If checks are absent, close and reopen the PR yourself to trigger PR validation and CodeQL. Wait for both and the code-scanning review before merging. [GitHub token behavior](https://docs.github.com/en/actions/concepts/security/github_token).
 
-If you later protect main against direct writes, change the README synchronization step to use a PR or stop committing README; otherwise publishing will fail there. Concurrent pushes can cause a safe push rejection: rerun Publish on the newest main. The workflow never force-pushes.
+Main requires a pull request, current passing validation and CodeQL checks, and resolved review conversations. Force pushes and deletion are blocked, with no bot bypass. There is no required second-person approval because this repository has one maintainer. Regenerate README before merging: a stale generated file fails validation. After merging another PR, update any remaining PR with main and rerun the build and checks.
 
 ## Troubleshooting
 
 | Symptom | Check |
 | --- | --- |
+| Stale README | Run `python3 scripts/build.py` and commit README on the PR branch |
 | Missing API key | Repository secret must be named `BRAVE_SEARCH_API_KEY` |
 | Brave failures | Key validity, credits, spending limit, provider status |
 | PR creation denied | Settings → Actions → General → allow Actions to create PRs |
@@ -177,3 +178,15 @@ The default website view includes agent-specific resources except certifications
 `failure_modes` is an optional list drawn from `injection`, `goal-hijack`, `tool-exfil`, `identity`, `memory`, `traces/custody`, `scope/RoE`, and `governance`. Tag only supported learning content; an empty list means not tagged, not safe or irrelevant. Discovery proposals can omit it until human review. `Research` is a format for papers; page inspection is not replication or peer-review verification.
 
 No broader resource was deleted: Secure Code Game, AI Security Academy, 80,000 Hours and Linux Foundation ecosystem orientation are secondary; LangChain joins CAASE and TAISE on the credentials shelf. Existing scope, price, availability and inspection labels are preserved.
+
+## Repository protections
+
+The publisher has no repository write permission. Discovery and publishing run only on main; PR validation uses read-only access. All checkouts disable persisted credentials. Discovery configures temporary runner authentication only when pushing a proposal branch.
+
+CodeQL scans Python, JavaScript and GitHub Actions on PRs, main updates and weekly. Actions must use full commit pins and are restricted to GitHub-owned Actions. Dependabot checks Action versions monthly, with vulnerability alerts and security fixes enabled. `SECURITY.md` directs sensitive reports to GitHub private vulnerability reporting. `CODEOWNERS` requests maintainer attention.
+
+The main ruleset also requires CodeQL analysis results and blocks new high or critical security alerts and error-level alerts. A completed scan is not the same as a clean scan; inspect the findings. Automated checks cannot establish that a linked project is safe or that all vulnerabilities have been found.
+
+Branch protections do not decide whether a learning resource is good: still inspect the original source, affiliation, claims, costs, and fit. Approve first-time contributor workflow runs only after checking their full diff. Approval to run checks is distinct from approval to merge.
+
+Existing catalog-only PRs opened before these protections need a regenerated README and an update from main. Ask contributors politely for this mechanical change, or offer to make it on their branch.

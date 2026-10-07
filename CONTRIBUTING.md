@@ -10,7 +10,7 @@ Product homepages, broad directories, inaccessible pages, and unclear curricula 
 
 Choose **Issues → New issue → Suggest a learning resource**. For a PR, edit `data/resources.json`; README is generated. Write an original description, select topics and format, and label scope, cost, availability, and inspection status. Disclose affiliation.
 
-For local edits run `python3 -m unittest discover -s tests -v` and `python3 scripts/build.py`. GitHub-only edits are supported: publishing regenerates README after merge.
+For local edits run `python3 -m unittest discover -s tests -v` and `python3 scripts/build.py`. Commit the regenerated README in the same PR. Validation rejects a stale README. If you edit only on GitHub, ask the maintainer to regenerate it on your PR branch before merging.
 
 ## Review automated proposals
 
