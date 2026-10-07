@@ -568,5 +568,23 @@
       "tool-exfil",
       "traces/custody"
     ]
+  },
+  {
+    "id": "darkmoon",
+    "title": "Darkmoon",
+    "url": "https://github.com/ASCIT31/Dark-Moon",
+    "type": "Repositories & tools",
+    "topics": [
+      "Red teaming",
+      "Security"
+    ],
+    "scope": "Broader AI",
+    "cost": "Free / infrastructure costs",
+    "description": "Open-source (GPLv3) autonomous penetration-testing platform, built and maintained by ASC-IT (the Darkmoon team). An LLM orchestrates specialist agents and offensive tools over a controlled, logged MCP interface, running on local models (Ollama, llama.cpp) or cloud providers (Anthropic, OpenAI, OpenRouter). Instructive for studying how an agentic system plans and chains tools end to end, and how an MCP gatekeeping layer and a local Privacy Gateway (reversible tokenization of real IPs, hosts and credentials) constrain it. Each finding is documented with the exact command run and its raw output; exploit confirmation is agent-asserted (re-tested only in the paid Pro tier), not a guaranteed real exploit. The free Community edition is a CLI/SDK; the web dashboard and remediation-to-pull-request are paid Darkmoon Pro. Advanced / disposable-lab setup only: the default docker-compose uses host networking, runs as root, and mounts the Docker socket and kubeconfig, so run it only against an authorized throwaway lab, never a daily-use machine or production.",
+    "availability": "Available",
+    "checked_on": "2026-10-06",
+    "evidence": "https://github.com/ASCIT31/Dark-Moon",
+    "verification": "Page inspected",
+    "failure_modes": []
   }
 ]
