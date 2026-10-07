@@ -63,6 +63,7 @@ Agent-specific resources are separated from broader AI and foundational material
 - [Apollo Research Watcher](<https://watcher.apolloresearch.ai/>) — Runtime monitoring and control project for studying and managing agent behavior. **Check provider; Agent-specific.** Available.
 - [Microsoft PyRIT](<https://github.com/microsoft/PyRIT>) — Open-source framework for identifying generative AI risks through adversarial testing. **Free / infrastructure costs; Broader AI.** Available.
 - [NVIDIA garak](<https://github.com/NVIDIA/garak>) — LLM vulnerability scanner useful for learning about model-level risks within agent systems. **Free / infrastructure costs; Broader AI.** Available.
+- [Orca AI Incident Archive](<https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive>) — Vendor-maintained (Continuum AI) archive of publicly disclosed AI agent security events, including incidents, vulnerabilities, research and policy. Distinguishes confirmed harm from demonstrations and labels disputed records and broader AI infrastructure. Source-linked case studies; verify individual cases against their cited sources. **Free; Agent-specific.** Available.
 
 ## Books
 

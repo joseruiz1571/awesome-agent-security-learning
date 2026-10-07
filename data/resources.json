@@ -453,9 +453,9 @@
     ],
     "scope": "Agent-specific",
     "cost": "Free",
-    "description": "Vendor-maintained (Continuum AI) open archive of publicly disclosed AI agent security events, including incidents, vulnerabilities, research and policy. Source-linked and graded for source quality; useful as case studies.",
+    "description": "Vendor-maintained (Continuum AI) archive of publicly disclosed AI agent security events, including incidents, vulnerabilities, research and policy. Distinguishes confirmed harm from demonstrations and labels disputed records and broader AI infrastructure. Source-linked case studies; verify individual cases against their cited sources.",
     "availability": "Available",
-    "checked_on": "2026-10-02",
+    "checked_on": "2026-10-07",
     "evidence": "https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive",
     "verification": "Page inspected",
     "failure_modes": [
