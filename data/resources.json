@@ -99,6 +99,27 @@
     ]
   },
   {
+    "id": "agentgateway",
+    "title": "agentgateway",
+    "url": "https://github.com/agentgateway/agentgateway",
+    "type": "Repositories & tools",
+    "topics": [
+      "Security",
+      "Governance"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Free / infrastructure costs",
+    "description": "Open-source gateway with documented JWT, API-key and OAuth authentication, fine-grained authorization, rate limits, TLS, and telemetry for MCP, A2A and model traffic. Quickstarts provide a starting point for studying agent access controls and observability; features were documented, not deployment-tested.",
+    "availability": "Available",
+    "checked_on": "2026-10-07",
+    "evidence": "https://github.com/agentgateway/agentgateway",
+    "verification": "Page inspected",
+    "failure_modes": [
+      "identity",
+      "governance"
+    ]
+  },
+  {
     "id": "caase",
     "title": "Certified Agentic AI Security Expert (CAASE)",
     "url": "https://www.practical-devsecops.com/certified-agentic-ai-security-expert/",
@@ -276,6 +297,27 @@
     "evidence": "https://cloudsecurityalliance.org/research/working-groups/autonomous-action-runtime-management-aarm",
     "verification": "Page inspected",
     "failure_modes": []
+  },
+  {
+    "id": "proof-of-control-working-draft",
+    "title": "Proof-of-Control v1.0 Working Draft",
+    "url": "https://advancedaisociety.org/proof-of-control",
+    "type": "Guides & standards",
+    "topics": [
+      "Security",
+      "Governance"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Free",
+    "description": "Advanced AI Society working draft on runtime evidence, authorization, and independent verification of agent actions, with schemas and reference artifacts. Distinguishes tamper-evident records from complete observation and gated execution. Public comment is open through October 30, 2026; draft claims are not established production guarantees.",
+    "availability": "Available",
+    "checked_on": "2026-10-07",
+    "evidence": "https://github.com/LFDT-ProofOfControl/ov-poc-standard",
+    "verification": "Page inspected",
+    "failure_modes": [
+      "traces/custody",
+      "governance"
+    ]
   },
   {
     "id": "mcp-security",
@@ -586,47 +628,5 @@
     "evidence": "https://github.com/ASCIT31/Dark-Moon",
     "verification": "Page inspected",
     "failure_modes": []
-  },
-  {
-    "id": "proof-of-control-working-draft",
-    "title": "Proof-of-Control v1.0 Working Draft",
-    "url": "https://advancedaisociety.org/proof-of-control",
-    "type": "Guides & standards",
-    "topics": [
-      "Security",
-      "Governance"
-    ],
-    "scope": "Agent-specific",
-    "cost": "Free",
-    "description": "Advanced AI Society working draft on runtime evidence, authorization, and independent verification of agent actions, with schemas and reference artifacts. Distinguishes tamper-evident records from complete observation and gated execution. Public comment is open through October 30, 2026; draft claims are not established production guarantees.",
-    "availability": "Available",
-    "checked_on": "2026-10-07",
-    "evidence": "https://github.com/LFDT-ProofOfControl/ov-poc-standard",
-    "verification": "Page inspected",
-    "failure_modes": [
-      "traces/custody",
-      "governance"
-    ]
-  },
-  {
-    "id": "agentgateway",
-    "title": "agentgateway",
-    "url": "https://github.com/agentgateway/agentgateway",
-    "type": "Repositories & tools",
-    "topics": [
-      "Security",
-      "Governance"
-    ],
-    "scope": "Agent-specific",
-    "cost": "Free / infrastructure costs",
-    "description": "Open-source gateway with documented JWT, API-key and OAuth authentication, fine-grained authorization, rate limits, TLS, and telemetry for MCP, A2A and model traffic. Quickstarts provide a starting point for studying agent access controls and observability; features were documented, not deployment-tested.",
-    "availability": "Available",
-    "checked_on": "2026-10-07",
-    "evidence": "https://github.com/agentgateway/agentgateway",
-    "verification": "Page inspected",
-    "failure_modes": [
-      "identity",
-      "governance"
-    ]
   }
 ]
