@@ -586,5 +586,86 @@
     "evidence": "https://github.com/ASCIT31/Dark-Moon",
     "verification": "Page inspected",
     "failure_modes": []
+  },
+  {
+    "id": "pwned-labs-aisrtp",
+    "title": "Pwned Labs AI Systems Red Team Professional (AISRTP)",
+    "url": "https://pwnedlabs.io/bootcamps/ai-systems-red-team-certification-aisrtp",
+    "type": "Certifications",
+    "topics": [
+      "Security",
+      "Red teaming"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Paid",
+    "description": "Provider-described practical certification covering prompt injection, RAG poisoning, agent/tool abuse, and MCP attack paths. The associated bootcamp lists a 24-hour hands-on exam and an October 20, 2026 launch; verify current enrollment and assessment terms.",
+    "availability": "Coming soon",
+    "checked_on": "2026-10-07",
+    "evidence": "https://pwnedlabs.io/bootcamps/aisrtp-bootcamp",
+    "verification": "Page inspected",
+    "failure_modes": [
+      "injection"
+    ]
+  },
+  {
+    "id": "aws-securing-agent-identities-demonstrated",
+    "title": "AWS Securing Agent Identities Demonstrated",
+    "url": "https://skillbuilder.aws/learn/Z8M87YZWXB/aws-securing-agent-identities-demonstrated/9ZRC3U51YT",
+    "type": "Certifications",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Free",
+    "description": "AWS microcredential assessing agent workload identities, tag-based access control, scoped JWT authorization, authentication methods, and token audit trails in a timed, live AWS lab. AWS states no Skill Builder subscription is required; passing earns a Credly badge. Distinct from AWS Certification.",
+    "availability": "Available",
+    "checked_on": "2026-10-07",
+    "evidence": "https://aws.amazon.com/blogs/training-and-certification/prove-your-agentic-ai-skills-two-new-microcredentials-now-available/",
+    "verification": "Page inspected",
+    "failure_modes": [
+      "identity"
+    ]
+  },
+  {
+    "id": "secops-certified-agentic-ai-pentester",
+    "title": "SecOps Group Certified Agentic AI Pentester (C-AgAIPen)",
+    "url": "https://pentestingexams.com/certifications/professional/certified-agentic-ai-pentester/",
+    "type": "Certifications",
+    "topics": [
+      "Security",
+      "Red teaming"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Paid",
+    "description": "Provider-described intermediate, four-hour practical exam with flag-based challenges against agentic applications accessed over VPN. Covers prompt injection, goal hijacking, tool abuse, memory, and multi-agent workflows. Prior application pentesting experience is recommended; the provider prohibits AI assistance during the exam.",
+    "availability": "Available",
+    "checked_on": "2026-10-07",
+    "evidence": "https://pentestingexams.com/certifications/professional/certified-agentic-ai-pentester/",
+    "verification": "Page inspected",
+    "failure_modes": [
+      "injection",
+      "goal-hijack",
+      "memory"
+    ]
+  },
+  {
+    "id": "aisec-university-mcp-security-fundamentals",
+    "title": "AI Security University: MCP Security Fundamentals",
+    "url": "https://aisec.university/courses/mcp-security-fundamentals",
+    "type": "Courses",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Free",
+    "description": "Free, self-paced course with 21 lessons on MCP architecture, the OWASP MCP Top 10, incidents, and mitigations. Covers token exposure, privilege escalation, tool poisoning, supply-chain tampering, and command injection. The provider issues a verifiable course-completion certificate after a final quiz.",
+    "availability": "Available",
+    "checked_on": "2026-10-07",
+    "evidence": "https://aisec.university/courses/mcp-security-fundamentals",
+    "verification": "Page inspected",
+    "failure_modes": [
+      "injection",
+      "identity"
+    ]
   }
 ]
