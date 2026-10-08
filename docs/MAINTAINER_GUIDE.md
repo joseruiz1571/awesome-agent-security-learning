@@ -50,7 +50,7 @@ A full run without the secret fails with a clear setup message. An explicitly se
 
 You can ask Codex: “Review PR #N, inspect its links, remove weak additions, and improve descriptions. Leave it open for me to merge.” This lets you delegate preparation while retaining the decision.
 
-The discovery workflow requests review from `joseruiz1571`. GitHub delivers notifications according to your account notification settings. If you transfer or fork the repository, update the reviewer and repository/site links.
+The discovery workflow requests review from `joseruiz1571`. `CODEOWNERS` requests that same review when the pull request opens. GitHub can reject the explicit request; the run still succeeds, and the run summary warns only when `joseruiz1571` is not left as a requested reviewer. GitHub delivers notifications according to your account notification settings. If you transfer or fork the repository, update the reviewer, `CODEOWNERS`, and repository/site links.
 
 Do not merge generic summaries simply to clear the queue. A useful small library is better than a noisy large one.
 
@@ -147,6 +147,7 @@ Main requires a pull request, current passing validation and CodeQL checks, and 
 | PR creation denied | Settings → Actions → General → allow Actions to create PRs |
 | Missing website | Settings → Pages → Source: GitHub Actions; inspect Publish run |
 | No new PR | Discovery summary; candidates may be duplicates or filtered out |
+| No reviewer on a green discovery run | Run summary warning. `CODEOWNERS` normally requests `joseruiz1571`; a rejected explicit request does not fail the job |
 | No scheduled runs | Default branch, off-week gate, inactivity disabling |
 | Feed failures | Verify or replace feed URL in discovery.json |
 | Validation failure | JSON syntax, allowed labels, duplicate URLs |

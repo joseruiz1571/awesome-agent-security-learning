@@ -65,4 +65,35 @@ jobs:
           git commit -m 'Propose newly discovered learning resources'
           gh auth setup-git
           git push origin "$branch"
-          gh pr create --base main --head "$branch" --title "Review learning resources — $(date -u +%F)" --body-file work/proposal.md --reviewer joseruiz1571
+          # Create the pull request before requesting review. CODEOWNERS already
+          # requests joseruiz1571 as the PR opens. Combining --reviewer with
+          # create makes gh exit 1 when requestReviewsByLogin fails, including
+          # when that code-owner review is already present.
+          pr_url=$(gh pr create --base main --head "$branch" --title "Review learning resources — $(date -u +%F)" --body-file work/proposal.md)
+          echo "Opened ${pr_url}"
+          reviewer=joseruiz1571
+          if ! gh pr edit "$pr_url" --add-reviewer "$reviewer"; then
+            echo "Review request for ${reviewer} was not accepted. Checking whether one is already present."
+          fi
+          present=false
+          for attempt in 1 2 3; do
+            reviewers=$(gh pr view "$pr_url" --json reviewRequests --jq '.reviewRequests[].login' || true)
+            if printf '%s\n' "$reviewers" | grep -Fxq "$reviewer"; then
+              present=true
+              break
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              sleep 2
+            fi
+          done
+          if [ "$present" = true ]; then
+            echo "Review request for ${reviewer} is present."
+          else
+            echo "::warning title=Review request did not stick::${reviewer} is not a requested reviewer on ${pr_url}"
+            {
+              echo "### Review request did not stick"
+              echo
+              echo "Opened ${pr_url}, but \`${reviewer}\` is not a requested reviewer."
+              echo "Discovery still succeeded. Open the pull request to review the proposal."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
