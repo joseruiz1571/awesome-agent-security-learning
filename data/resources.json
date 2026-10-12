@@ -709,5 +709,234 @@
       "injection",
       "identity"
     ]
+  },
+  {
+    "id": "eb64c9f11965e9f3",
+    "title": "Best Agentic AI Security Certification in 2026: A Buyer's Guide - Practical DevSecOps",
+    "url": "https://www.practical-devsecops.com/best-agentic-ai-security-certification-in-2026",
+    "type": "Certifications",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://www.practical-devsecops.com/best-agentic-ai-security-certification-in-2026",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent security course certification training"
+  },
+  {
+    "id": "954112d33141b423",
+    "title": "What AI safety research can teach us about measuring success",
+    "url": "https://www.everydayux.net/ai-safety-goals-rewards-and-trust",
+    "type": "CTFs & labs",
+    "topics": [
+      "Safety"
+    ],
+    "scope": "Broader AI",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about safety. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://www.everydayux.net/ai-safety-goals-rewards-and-trust",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent safety evaluation oversight learning"
+  },
+  {
+    "id": "c1fc8929055433a0",
+    "title": "askalf/askalf",
+    "url": "https://github.com/askalf/askalf",
+    "type": "Repositories & tools",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://github.com/askalf/askalf",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "GitHub Search",
+    "discovery_query": "\"agent security\" in:name,description,topics archived:false fork:false pushed:>=2026-09-07"
+  },
+  {
+    "id": "7e556c6d1cd0add5",
+    "title": "Aureliedumbfounding630/agent-governance-toolkit",
+    "url": "https://github.com/aureliedumbfounding630/agent-governance-toolkit",
+    "type": "Repositories & tools",
+    "topics": [
+      "Safety",
+      "Governance"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about safety, governance. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://github.com/aureliedumbfounding630/agent-governance-toolkit",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "GitHub Search",
+    "discovery_query": "\"agent governance\" in:name,description archived:false fork:false pushed:>=2026-09-07"
+  },
+  {
+    "id": "f674ef4f7007e784",
+    "title": "withhammad/service-recovery-agent",
+    "url": "https://github.com/withhammad/service-recovery-agent",
+    "type": "Repositories & tools",
+    "topics": [
+      "Safety"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about safety. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://github.com/withhammad/service-recovery-agent",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "GitHub Search",
+    "discovery_query": "\"agent safety\" in:name,description archived:false fork:false pushed:>=2026-09-07"
+  },
+  {
+    "id": "7afe772fe64eba3e",
+    "title": "LLM Heist: Hijacking LiteLLM for Traffic Interception, Key Theft, and Tool-Call Injection",
+    "url": "https://embracethered.com/blog/posts/2026/hijacking-litellm-for-fun-and-profit",
+    "type": "Blogs & newsletters",
+    "topics": [
+      "Governance"
+    ],
+    "scope": "Broader AI",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about governance. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://embracethered.com/blog/posts/2026/hijacking-litellm-for-fun-and-profit",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "Embrace The Red",
+    "discovery_query": "https://embracethered.com/blog/index.xml"
+  },
+  {
+    "id": "8f4d751c38c6d396",
+    "title": "GenAI and Agentic AI Exploit Roundup Q3 2026",
+    "url": "https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026",
+    "type": "Blogs & newsletters",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "OWASP GenAI",
+    "discovery_query": "https://genai.owasp.org/feed/"
+  },
+  {
+    "id": "99ddc0d7e4865a42",
+    "title": "Gray Swan Arena: Crowdsourced AI Red-Teaming — CASRAI",
+    "url": "https://casrai.org/guides/gray-swan-arena-crowdsourced-red-teaming",
+    "type": "Blogs & newsletters",
+    "topics": [
+      "Red teaming"
+    ],
+    "scope": "Broader AI",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about red teaming. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://casrai.org/guides/gray-swan-arena-crowdsourced-red-teaming",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent red teaming CTF lab tutorial"
+  },
+  {
+    "id": "4e62d9206ca276a6",
+    "title": "Improving scalable oversight with co-trained monitors",
+    "url": "https://arxiv.org/html/2609.36049v1",
+    "type": "Courses",
+    "topics": [
+      "Safety"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about safety. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://arxiv.org/html/2609.36049v1",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent safety evaluation oversight learning"
+  },
+  {
+    "id": "ebf180a6e5469f4a",
+    "title": "GitHub - systempromptio/awesome-ai-agent-governance: The curated list of tools, standards, and resources for governing AI agents in production: policy",
+    "url": "https://github.com/systempromptio/awesome-ai-agent-governance",
+    "type": "Repositories & tools",
+    "topics": [
+      "Governance"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about governance. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://github.com/systempromptio/awesome-ai-agent-governance",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent governance framework guide"
+  },
+  {
+    "id": "6ff748395b43f7f6",
+    "title": "Securing Agentic AI [Leanpub PDF/iPad/Kindle]",
+    "url": "https://leanpub.com/securingagenticai",
+    "type": "Books",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://leanpub.com/securingagenticai",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent security book textbook"
+  },
+  {
+    "id": "949afb2ea199a93c",
+    "title": "AI Security Podcast - Podcast - Apple Podcasts",
+    "url": "https://podcasts.apple.com/ca/podcast/ai-security-podcast/id1711183470",
+    "type": "Podcasts",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Broader AI",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://podcasts.apple.com/ca/podcast/ai-security-podcast/id1711183470",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-12",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent security podcast"
   }
 ]
