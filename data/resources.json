@@ -709,5 +709,238 @@
       "injection",
       "identity"
     ]
+  },
+  {
+    "id": "ebecb1e1de849699",
+    "title": "TryHackMe | AI Security Training",
+    "url": "https://tryhackme.com/path/outline/aisecurity",
+    "type": "Courses",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Broader AI",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://tryhackme.com/path/outline/aisecurity",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent security course certification training"
+  },
+  {
+    "id": "183f3ad5a61f6cb6",
+    "title": "Complete Guide to Agentic AI Red Teaming | DeepTeam - The LLM Red Teaming Framework",
+    "url": "https://www.trydeepteam.com/guides/guide-agentic-ai-red-teaming",
+    "type": "Guides & standards",
+    "topics": [
+      "Red teaming"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about red teaming. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://www.trydeepteam.com/guides/guide-agentic-ai-red-teaming",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent red teaming CTF lab tutorial"
+  },
+  {
+    "id": "0e377efa161ca355",
+    "title": "Evaluating and Ensuring Safety in AI Agents Powered by Large Language Models",
+    "url": "https://aidatacenter.ai/insights/ai-agents-llms/ai-agents-llm-evaluation-and-safety",
+    "type": "Blogs & newsletters",
+    "topics": [
+      "Security",
+      "Safety"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security, safety. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://aidatacenter.ai/insights/ai-agents-llms/ai-agents-llm-evaluation-and-safety",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent safety evaluation oversight learning"
+  },
+  {
+    "id": "f2adf1f9c586f571",
+    "title": "AI agent governance: a practical guide to risk, trust, and compliance",
+    "url": "https://www.kore.ai/blog/ai-agent-governance-a-practical-guide",
+    "type": "Guides & standards",
+    "topics": [
+      "Governance"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about governance. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://www.kore.ai/blog/ai-agent-governance-a-practical-guide",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent governance framework guide"
+  },
+  {
+    "id": "657734cb25d961e6",
+    "title": "5 Artificial intelligence in cyber security books + 1 Free PDF - Amperly",
+    "url": "https://amperly.com/artificial-intelligence-in-cyber-security-books",
+    "type": "Books",
+    "topics": [
+      "Security",
+      "Red teaming"
+    ],
+    "scope": "Broader AI",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security, red teaming. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://amperly.com/artificial-intelligence-in-cyber-security-books",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent security book textbook"
+  },
+  {
+    "id": "01e500905cc1c835",
+    "title": "AI Security Ops - Video Podcast - Apple Podcasts",
+    "url": "https://podcasts.apple.com/us/podcast/ai-security-ops/id1858709384",
+    "type": "Podcasts",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://podcasts.apple.com/us/podcast/ai-security-ops/id1858709384",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent security podcast"
+  },
+  {
+    "id": "9a8c73d1b6c1b2b8",
+    "title": "How to Secure Enterprise AI Agents Before They Become a Problem - YouTube",
+    "url": "https://www.youtube.com/watch?v=YDtq61_vDbI",
+    "type": "Videos & webinars",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://www.youtube.com/watch?v=YDtq61_vDbI",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "Brave Search",
+    "discovery_query": "AI agent security YouTube channel"
+  },
+  {
+    "id": "2e150a6a4cdd4817",
+    "title": "EagleFox31/agentshield-ai",
+    "url": "https://github.com/eaglefox31/agentshield-ai",
+    "type": "Repositories & tools",
+    "topics": [
+      "Security",
+      "Safety"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security, safety. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://github.com/eaglefox31/agentshield-ai",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "GitHub Search",
+    "discovery_query": "\"agent security\" in:name,description,topics archived:false fork:false pushed:>=2026-09-21"
+  },
+  {
+    "id": "8322ab80831e8a38",
+    "title": "Mustafa-Caliskan/ai-soc-agent-lab",
+    "url": "https://github.com/mustafa-caliskan/ai-soc-agent-lab",
+    "type": "Repositories & tools",
+    "topics": [
+      "Security",
+      "Governance"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security, governance. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://github.com/mustafa-caliskan/ai-soc-agent-lab",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "GitHub Search",
+    "discovery_query": "\"prompt injection\" agent in:description archived:false fork:false pushed:>=2026-09-21"
+  },
+  {
+    "id": "fb48d5a0b390a612",
+    "title": "aeoess/agent-governance-vocabulary",
+    "url": "https://github.com/aeoess/agent-governance-vocabulary",
+    "type": "Repositories & tools",
+    "topics": [
+      "Governance"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about governance. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://github.com/aeoess/agent-governance-vocabulary",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "GitHub Search",
+    "discovery_query": "\"agent governance\" in:name,description archived:false fork:false pushed:>=2026-09-21"
+  },
+  {
+    "id": "71b7b179081a1483",
+    "title": "aquamarine-bot/ai-safety-weekly",
+    "url": "https://github.com/aquamarine-bot/ai-safety-weekly",
+    "type": "Repositories & tools",
+    "topics": [
+      "Red teaming",
+      "Safety"
+    ],
+    "scope": "Agent-specific",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about red teaming, safety. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://github.com/aquamarine-bot/ai-safety-weekly",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "GitHub Search",
+    "discovery_query": "\"agent safety\" in:name,description archived:false fork:false pushed:>=2026-09-21"
+  },
+  {
+    "id": "6619134087094c0c",
+    "title": "Quoting Armin Ronacher",
+    "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher",
+    "type": "Blogs & newsletters",
+    "topics": [
+      "Security"
+    ],
+    "scope": "Broader AI",
+    "cost": "Check provider",
+    "description": "Candidate learning resource about security. Review its content, audience, and access terms before accepting.",
+    "availability": "Check provider",
+    "checked_on": null,
+    "evidence": "https://simonwillison.net/2026/Oct/22/armin-ronacher",
+    "verification": "Metadata only",
+    "discovered_on": "2026-10-26",
+    "discovery_source": "Simon Willison",
+    "discovery_query": "https://simonwillison.net/atom/everything/"
   }
 ]

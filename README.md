@@ -31,7 +31,9 @@ Agent-specific resources are separated from broader AI and foundational material
 
 ## Guides & standards
 
+- [AI agent governance: a practical guide to risk, trust, and compliance](<https://www.kore.ai/blog/ai-agent-governance-a-practical-guide>) — Candidate learning resource about governance. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
 - [Coding Agent Threat Model — Apollo Watcher Student Guide](<https://joseruiz1571.github.io/awesome-agent-security-learning/#threat-model>) — Original infographic and student worksheet tracing coding-agent threats, Watcher review coverage and independent execution controls. Includes primary sources and a harmless classroom exercise. **Free; Agent-specific.** Available.
+- [Complete Guide to Agentic AI Red Teaming | DeepTeam - The LLM Red Teaming Framework](<https://www.trydeepteam.com/guides/guide-agentic-ai-red-teaming>) — Candidate learning resource about red teaming. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
 - [CSA Autonomous Action Runtime Management](<https://cloudsecurityalliance.org/research/working-groups/autonomous-action-runtime-management-aarm>) — Working group exploring runtime controls and governance for autonomous actions. **Free; Agent-specific.** Available.
 - [Linux Foundation: Agentic AI Foundation](<https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation>) — Background on the foundation and projects including MCP, goose, and AGENTS.md; an ecosystem orientation resource. **Free; Foundations.** Available.
 - [MCP Security Best Practices](<https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices>) — Official guidance on authorization, confused-deputy risks, token handling, and other MCP security concerns. **Free; Agent-specific.** Available.
@@ -52,6 +54,7 @@ Agent-specific resources are separated from broader AI and foundational material
 - [AI Security University: MCP Security Fundamentals](<https://aisec.university/courses/mcp-security-fundamentals>) — Free, self-paced course with 21 lessons on MCP architecture, the OWASP MCP Top 10, incidents, and mitigations. Covers token exposure, privilege escalation, tool poisoning, supply-chain tampering, and command injection. The provider issues a verifiable course-completion certificate after a final quiz. **Free; Agent-specific.** Available.
 - [Astrix AI Agent Training Program](<https://astrix.security/learn/ai-agent-training-program/>) — Vendor-produced training collection about AI agents and their security. **Check provider; Agent-specific.** Available.
 - [SANS SEC546: Securing Agentic AI](<https://www.sans.org/cyber-security-courses/securing-agentic-ai>) — Instructor-led training focused on securing agentic AI systems. Check current dates and prerequisites with SANS. **Paid; Agent-specific.** Available.
+- [TryHackMe | AI Security Training](<https://tryhackme.com/path/outline/aisecurity>) — Candidate learning resource about security. Review its content, audience, and access terms before accepting. **Check provider; Broader AI.** Check provider.
 
 ## Credentials (verify claims)
 
@@ -64,21 +67,28 @@ Agent-specific resources are separated from broader AI and foundational material
 
 ## Repositories & tools
 
+- [aeoess/agent-governance-vocabulary](<https://github.com/aeoess/agent-governance-vocabulary>) — Candidate learning resource about governance. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
 - [AgentDojo](<https://github.com/ethz-spylab/agentdojo>) — Research environment for evaluating prompt-injection attacks and defenses in tool-using agents. **Free / infrastructure costs; Agent-specific.** Available.
 - [agentgateway](<https://github.com/agentgateway/agentgateway>) — Open-source gateway with documented JWT, API-key and OAuth authentication, fine-grained authorization, rate limits, TLS, and telemetry for MCP, A2A and model traffic. Quickstarts provide a starting point for studying agent access controls and observability; features were documented, not deployment-tested. **Free / infrastructure costs; Agent-specific.** Available.
 - [Apollo Research Watcher](<https://watcher.apolloresearch.ai/>) — Runtime monitoring and control project for studying and managing agent behavior. **Check provider; Agent-specific.** Available.
+- [aquamarine-bot/ai-safety-weekly](<https://github.com/aquamarine-bot/ai-safety-weekly>) — Candidate learning resource about red teaming, safety. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
 - [Darkmoon](<https://github.com/ASCIT31/Dark-Moon>) — Open-source (GPLv3) autonomous penetration-testing platform, built and maintained by ASC-IT (the Darkmoon team). An LLM orchestrates specialist agents and offensive tools over a controlled, logged MCP interface, running on local models (Ollama, llama.cpp) or cloud providers (Anthropic, OpenAI, OpenRouter). Instructive for studying how an agentic system plans and chains tools end to end, and how an MCP gatekeeping layer and a local Privacy Gateway (reversible tokenization of real IPs, hosts and credentials) constrain it. Each finding is documented with the exact command run and its raw output; exploit confirmation is agent-asserted (re-tested only in the paid Pro tier), not a guaranteed real exploit. The free Community edition is a CLI/SDK; the web dashboard and remediation-to-pull-request are paid Darkmoon Pro. Advanced / disposable-lab setup only: the default docker-compose uses host networking, runs as root, and mounts the Docker socket and kubeconfig, so run it only against an authorized throwaway lab, never a daily-use machine or production. **Free / infrastructure costs; Broader AI.** Available.
+- [EagleFox31/agentshield-ai](<https://github.com/eaglefox31/agentshield-ai>) — Candidate learning resource about security, safety. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
 - [Microsoft PyRIT](<https://github.com/microsoft/PyRIT>) — Open-source framework for identifying generative AI risks through adversarial testing. **Free / infrastructure costs; Broader AI.** Available.
+- [Mustafa-Caliskan/ai-soc-agent-lab](<https://github.com/mustafa-caliskan/ai-soc-agent-lab>) — Candidate learning resource about security, governance. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
 - [NVIDIA garak](<https://github.com/NVIDIA/garak>) — LLM vulnerability scanner useful for learning about model-level risks within agent systems. **Free / infrastructure costs; Broader AI.** Available.
 - [Orca AI Incident Archive](<https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive>) — Vendor-maintained (Continuum AI) archive of publicly disclosed AI agent security events, including incidents, vulnerabilities, research and policy. Distinguishes confirmed harm from demonstrations and labels disputed records and broader AI infrastructure. Source-linked case studies; verify individual cases against their cited sources. **Free; Agent-specific.** Available.
 
 ## Books
 
+- [5 Artificial intelligence in cyber security books + 1 Free PDF - Amperly](<https://amperly.com/artificial-intelligence-in-cyber-security-books>) — Candidate learning resource about security, red teaming. Review its content, audience, and access terms before accepting. **Check provider; Broader AI.** Check provider.
 - [Introduction to AI Safety, Ethics, and Society](<https://www.aisafetybook.com/>) — Online textbook introducing AI risks, safety, ethics, and societal governance. **Free; Broader AI.** Available.
 
 ## Blogs & newsletters
 
 - [Embrace The Red](<https://embracethered.com/blog/>) — Security research blog with practical investigations of prompt injection, assistants, and agent attack surfaces. **Free; Broader AI.** Available.
+- [Evaluating and Ensuring Safety in AI Agents Powered by Large Language Models](<https://aidatacenter.ai/insights/ai-agents-llms/ai-agents-llm-evaluation-and-safety>) — Candidate learning resource about security, safety. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
+- [Quoting Armin Ronacher](<https://simonwillison.net/2026/Oct/22/armin-ronacher>) — Candidate learning resource about security. Review its content, audience, and access terms before accepting. **Check provider; Broader AI.** Check provider.
 - [Simon Willison: Prompt Injection](<https://simonwillison.net/tags/prompt-injection/>) — Technical explanations and commentary on prompt injection and the risks of tool-using AI systems. **Free; Agent-specific.** Available.
 
 ## YouTube channels
@@ -87,11 +97,13 @@ Agent-specific resources are separated from broader AI and foundational material
 
 ## Videos & webinars
 
+- [How to Secure Enterprise AI Agents Before They Become a Problem - YouTube](<https://www.youtube.com/watch?v=YDtq61_vDbI>) — Candidate learning resource about security. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
 - [Securing Agentic AI: Where Do You Start?](<https://www.sans.org/webcasts/securing-agentic-ai-where-do-you-start>) — SANS introductory webcast on approaching agentic AI security. Registration or replay availability may vary. **Check provider; Agent-specific.** Check provider.
 
 ## Podcasts
 
 - [80,000 Hours Podcast](<https://80000hours.org/podcast/>) — Long-form interviews including AI risk, alignment, and governance; the feed also covers other topics. **Free; Broader AI.** Available.
+- [AI Security Ops - Video Podcast - Apple Podcasts](<https://podcasts.apple.com/us/podcast/ai-security-ops/id1858709384>) — Candidate learning resource about security. Review its content, audience, and access terms before accepting. **Check provider; Agent-specific.** Check provider.
 
 ## Curation and discovery
 
